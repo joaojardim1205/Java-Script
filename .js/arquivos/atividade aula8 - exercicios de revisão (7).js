@@ -1,15 +1,21 @@
-// Faça um programa que leia 4 notas em um array, mostre as notas e a media na tela.
+// Faça um programa que leia 20 numeros inteiros e armazene-os num vetor. Armazene os numeros pares no vetor PAR e os numeros IMPARES no vetor impar. imprima os tres vetores   
 
-let ArrayNotas = []
+let ArrayVetor = []
+let ArrayVetorPAR = []
+let ArrayVetorIMPAR = []
 
-while (ArrayNotas.length < 4) {
-    let numero = Number (prompt ("Digite aqui a sua nota: "))
-    ArrayNotas.push (numero)
+for (let i = 0; i < 20; i++) {
+    let numero = parseInt (prompt (`Digite o  ${i + 1}° numero inteiro`))
+
+    ArrayVetor.push(numero)
+    
+    if (numero % 2 === 0){
+        ArrayVetorPAR.push(numero)
+    } else {
+        ArrayVetorIMPAR.push(numero)
+    }
 }
 
-console.log (ArrayNotas)
-
-let numeroSoma = ArrayNotas [0] + ArrayNotas [1] + ArrayNotas [2] + ArrayNotas [3] 
-
-let numeroMedia = numeroSoma / 4
-console.log (numeroMedia)
+console.log ("Todos os numeros: ",ArrayVetor)
+console.log ("Todos os numeros pares: ",ArrayVetorPAR)
+console.log ("Todos os numeros impares: ",ArrayVetorIMPAR)

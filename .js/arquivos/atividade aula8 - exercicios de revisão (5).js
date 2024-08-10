@@ -1,8 +1,5 @@
-// Faça um programa que peça para o usuario informar uma frase, entao altere todas as vogais "a" e "o" por "x"
+// faca um programa que receba um email e remova os espacos antes e depois
 
-let FraseUsuario = prompt ("insira aqui uma frase qualquer")
+let EmailUsuario = prompt ("Insira aqui o seu email")
 
-let NovaFrase = FraseUsuario.replaceAll ("a", "x")
-NovaFrase = FraseUsuario.replaceAll ("o", "x")
-
-console.log (NovaFrase)
+console.log (EmailUsuario.trim ())

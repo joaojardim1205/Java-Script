@@ -1,8 +1,7 @@
-// Faça um programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
+// Faça um programa receba um usuario e senha e converta ambos para minusculo
 
-let ganhoHora = Number (prompt ("insira aqui quanto você ganha por hora no mês"))
-let numHora = Number (prompt ("insira aqui quantas horas você trabalha no mês"))
+let usuario = prompt ("Insira aqui o nome de usuario")
+let senha = prompt ("Insira aqui a sua senha")
 
-let salarioFInal = ganhoHora * numHora
-
-console.log ("no final do mês você vai ganhar R$" + salarioFInal)
+console.log ("o seu nome de usuario ficou: " + usuario.toLowerCase())
+console.log ("a sua senha foi: " + senha.toLowerCase())

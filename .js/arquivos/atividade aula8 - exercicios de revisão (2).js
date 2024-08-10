@@ -1,10 +1,8 @@
-// Tendo como dados de entrada a altura de uma pessoa, construa um algoritmo que calcule seu peso ideal, usando a seguinte fórmula: (72.7*altura) - 58
+// Faça um programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
 
-let alturaPaciente = parseFloat (prompt ("insira aqui a sua altura para se calcular o seu peso ideal"))
+let ganhoHora = Number (prompt ("insira aqui quanto você ganha por hora no mês"))
+let numHora = Number (prompt ("insira aqui quantas horas você trabalha no mês"))
 
-let pesoIdeal = (alturaPaciente * 72.7) - 58
+let salarioFInal = ganhoHora * numHora
 
-console.log ("o seu peso ideal com base na sua altura é " + pesoIdeal)
-
-
-
+console.log ("no final do mês você vai ganhar R$" + salarioFInal)

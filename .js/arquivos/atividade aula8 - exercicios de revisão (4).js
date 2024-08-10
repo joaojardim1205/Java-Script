@@ -1,7 +1,8 @@
-// Faça um programa receba um usuario e senha e converta ambos para minusculo
+// Faça um programa que peça para o usuario informar uma frase, entao altere todas as vogais "a" e "o" por "x"
 
-let usuario = prompt ("Insira aqui o nome de usuario")
-let senha = prompt ("Insira aqui a sua senha")
+let FraseUsuario = prompt ("insira aqui uma frase qualquer")
 
-console.log ("o seu nome de usuario ficou: " + usuario.toLowerCase())
-console.log ("a sua senha foi: " + senha.toLowerCase())
+let NovaFrase = FraseUsuario.replaceAll ("a", "x")
+NovaFrase = FraseUsuario.replaceAll ("o", "x")
+
+console.log (NovaFrase)
