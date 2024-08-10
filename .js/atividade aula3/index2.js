@@ -10,8 +10,15 @@ Eu sou [NOME], tenho [IDADE] anos, moro em [ENDEREÇO] e sou [PROFISSÃO].
 */
 
 function informações() {
-    console.log("Eu sou joão, tenho 15 anos, moro em Novo Hamburgo e sou estudante");
+    console.log("Eu sou joão, tenho 15 anos, moro em Novo Hamburgo e sou estudante")
 }
 
 console.log(informações())
 
+function informacoesPessoais(nome, idade, cidade, profissao) {
+    return `Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}.`
+}
+
+
+const mensagem = informacoesPessoais("João Jardim", 15, "Novo hamburgo", "estudante")
+console.log(mensagem)
