@@ -1,33 +1,46 @@
 /*
-Crie uma função para cada uma das operações básicas (soma, subtração, multiplicação e divisão). Em seguida, peça para o usuário inserir dois números e chame essas 4 funções com esses valores inputados pelo usuário sendo o argumento. Por fim, mostre no console o resultado das operações:
-Números inseridos: 30 e 3
-Soma: 33
-Diferença: 27
-Multiplicação: 90
-Divisão: 10
+2. Escreva as funções explicadas abaixo:
+    
+    a) Escreva uma função que receba 2 números como parâmetros, e, dentro da função, faça a soma das duas entradas e retorne o resultado. Invoque a função e imprima no console o resultado.
+    
+    b) Faça uma função que recebe 2 números e retorne um booleano que informa se o primeiro número é **maior ou igual** ao segundo.
+    
+    c) Escreva uma função que receba um número e devolva um booleano indicando se ele é par ou não
+    
+    d) Faça uma função que recebe uma mensagem (`string`) como parâmetro e imprima o tamanho dessa mensagem, juntamente com uma versão dela em letras maiúsculas.
 */
 
+// a)
 function soma (num1, num2){
-    const soma = num1 + num2
-    console.log (`Soma: ${soma}`)
+    return num1 + num2
 }
 
-function subtração (num1, num2){
-    const subtração = num1 - num2
-    console.log (`Diferença: ${subtração}`)
+console.log (soma(10,20))
+
+// b)
+function MaiorOuMenor (num1, num2){
+    return num1 >= num2
 }
 
-function multiplicação (num1, num2){
-    const Multiplicação = num1 * num2
-    console.log(`Multiplicação: ${Multiplicação}`)
+console.log(MaiorOuMenor(9,15))
+console.log(MaiorOuMenor(23,20))
+
+// c)
+function ParOuImpar (num){
+    return (num % 2 == 0)
+}
+let A
+
+console.log(ParOuImpar(10))
+console.log(ParOuImpar(7))
+
+// d)
+function processaMensagem(mensagem) {
+    const tamanho = mensagem.length
+    const mensagemMaiuscula = mensagem.toUpperCase()
+    
+    console.log(`Tamanho da mensagem: ${tamanho}`)
+    console.log(`Mensagem em maiúsculas: ${mensagemMaiuscula}`)
 }
 
-function divisão (num1, num2){
-    const divisao = num1 / num2
-    console.log (`Divisão: ${divisao}`)
-}
-
-soma(30,3)
-subtração(30,3)
-multiplicação(30,3)
-divisão(30,3)
+console.log(processaMensagem("Olá, como você está?"))

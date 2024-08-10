@@ -1,46 +1,24 @@
 /*
-2. Escreva as funções explicadas abaixo:
-    
-    a) Escreva uma função que receba 2 números como parâmetros, e, dentro da função, faça a soma das duas entradas e retorne o resultado. Invoque a função e imprima no console o resultado.
-    
-    b) Faça uma função que recebe 2 números e retorne um booleano que informa se o primeiro número é **maior ou igual** ao segundo.
-    
-    c) Escreva uma função que receba um número e devolva um booleano indicando se ele é par ou não
-    
-    d) Faça uma função que recebe uma mensagem (`string`) como parâmetro e imprima o tamanho dessa mensagem, juntamente com uma versão dela em letras maiúsculas.
+Escreva as funções explicadas abaixo:
+a) A função não deve receber nenhum parâmetro e deve imprimir uma mensagem falando algumas informações sobre você, como: 
+"Eu sou Caio, tenho 23 anos, moro em São Paulo e sou estudante."
+​
+Troque o nome, idade, cidade e se é estudante ou não por informações sobre você. Lembrando que a função não possui entradas, apenas imprime essa mensagem.
+
+b)  Agora escreva uma função que receba 4 parâmetros que correspondem às informações de uma pessoa: o nome (string), a idade (number), a cidade (string) e uma profissão (string). Ela deve retornar uma string que unifique todas as informações da pessoa em uma só mensagem com o template:
+Eu sou [NOME], tenho [IDADE] anos, moro em [ENDEREÇO] e sou [PROFISSÃO].
 */
 
-// a)
-function soma (num1, num2){
-    return num1 + num2
+function informações() {
+    console.log("Eu sou joão, tenho 15 anos, moro em Novo Hamburgo e sou estudante")
 }
 
-console.log (soma(10,20))
+console.log(informações())
 
-// b)
-function MaiorOuMenor (num1, num2){
-    return num1 >= num2
+function informacoesPessoais(nome, idade, cidade, profissao) {
+    return `Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}.`
 }
 
-console.log(MaiorOuMenor(9,15))
-console.log(MaiorOuMenor(23,20))
 
-// c)
-function ParOuImpar (num){
-    return (num % 2 == 0)
-}
-let A
-
-console.log(ParOuImpar(10))
-console.log(ParOuImpar(7))
-
-// d)
-function processaMensagem(mensagem) {
-    const tamanho = mensagem.length
-    const mensagemMaiuscula = mensagem.toUpperCase()
-    
-    console.log(`Tamanho da mensagem: ${tamanho}`)
-    console.log(`Mensagem em maiúsculas: ${mensagemMaiuscula}`)
-}
-
-console.log(processaMensagem("Olá, como você está?"))
+const mensagem = informacoesPessoais("João Jardim", 15, "Novo hamburgo", "estudante")
+console.log(mensagem)
