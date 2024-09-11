@@ -7,16 +7,32 @@
                 background-color: grey;
             }
 
+            table, td, th {
+                text-align: center;
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+
             h1, h3 {
                 text-align: center;
             }
 
-            a {
-            font-size: large;
-            font-weight: bold;
-            color: black;
+            td {
+                font-style: italic;
+                font-size: 17px;
+                width: 650px;
             }
 
+            a {
+                font-size: large;
+                font-weight: bold;
+                color: black;
+            }
+
+            img {
+                width: 250px;
+            }
 
         </style>
     </head>
@@ -29,9 +45,31 @@
                 <tr>
                     <th>Nome do prato</th>
                     <th>Valor</th>
+                    <th>Descricao</th>
+                    <th>Imagem</th>
                 </tr>
             </thead>
+            <tbody>
+                <tr>
+                    <td>Fugu (Baiacu) - Japão</td>
+                    <td>R$ 500 a R$ 1.000 por refeicao</td>
+                    <td>O fugu é um peixe altamente venenoso se não for preparado corretamente. Apenas chefs licenciados podem prepará-lo. Geralmente é servido em fatias finas como sashimi.</td>
+                    <td><img src="Fugu.jpg"></td>
+                </tr>
+                <tr>
+                    <td>Hákarl (Tubarão Fermentado) - Islândia</td>
+                    <td>R$ 100 a R$ 200 por refeicao</td>
+                    <td>Hákarl é feito de carne de tubarão-groenlandês, que é curada e fermentada por vários meses. O processo envolve enterrá-lo na areia e depois pendurá-lo para secar. Tem um cheiro muito forte e um sabor adquirido.</td>
+                    <td><img src="Hakarl.jpg"></td>
+                </tr>
+                <tr>
+                    <td>Balut (Embrião de Pato) - Filipinas</td>
+                    <td>R$ 5 a R$ 15 por unidade.</td>
+                    <td>Balut é um ovo de pato fertilizado com um embrião parcialmente desenvolvido. É cozido e geralmente consumido com uma pitada de sal. É considerado um petisco em muitas partes da Ásia.</td>
+                    <td><img src="Balut.jpg"></td>
+                </tr>
+            </tbody>
         </table>
-        <a href="index.html">Voltar para a pagina inicial</a>
+        <br><a href="index.html">Voltar para a pagina inicial</a>
     </body>
 </html>
