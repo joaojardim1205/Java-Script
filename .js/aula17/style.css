@@ -1,0 +1,15 @@
+#quadrado1 {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    padding: 20px;
+}
+
+#quadrado2 {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    padding: 20px;
+}
