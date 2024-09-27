@@ -1,0 +1,61 @@
+body {
+    background-color: grey;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: o;
+    text-align: center;
+}
+
+header {
+    padding: 10px;
+    font-size: 20px;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 28px;
+}
+
+nav {
+    background-color: lightgrey;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    padding: 20px;
+    margin: 0px 40px 40px 40px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 25px;
+    font-weight: bold
+}
