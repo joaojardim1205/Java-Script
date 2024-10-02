@@ -1,0 +1,13 @@
+body {
+    color: orange;
+    display: inline-block;
+}
+
+h2.texto-com-background {
+    background-color: yellow;
+}
+
+#texto-com-outra-cor {
+    background-color: yellow;
+    color: green;
+}

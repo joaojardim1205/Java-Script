@@ -1,0 +1,15 @@
+#botao, button {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+}
+
+button:active {
+    background-color: pink;
+    color: red;
+}
