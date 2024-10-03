@@ -37,3 +37,10 @@ nav ul li a {
     text-decoration: none;
     color: black;
 }
+
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}

@@ -59,3 +59,10 @@ main {
     font-size: 25px;
     font-weight: bold
 }
+
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
