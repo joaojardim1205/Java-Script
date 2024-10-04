@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina de venda</title>
+    <link rel="stylesheet" href="style5.css" type="text/css">
+</head>
+<body>
+    
+    <header>
+        <h1>TechZone Eletrônicos</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="add-produto.html">Adicionar Produto</a></li>
+            <li><a href="funcionarios.html">Funcionários</a></li>
+            <li><a href="ctrl-estoque.html">Controle de Estoque</a></li>
+            <li><a href="pag-historico.html">Página de Histórico</a></li>
+        </ul>
+    </nav>
+
+    <h2>Vendas</h2>
+
+    <main>
+        <section>
+            <h2>Adicionar produtos</h2>
+            <form action="#">
+                <div>
+                    <label for="produto">Produto:</label>
+                    <input type="text" id="produto" name="produto">
+                </div>
+
+                <div>
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1">
+                </div>
+
+                <div>
+                    <label for="preco">Preço(R$):</label>
+                    <input type="number" id="preco" name="preco">
+                </div>
+
+                <div>
+                    <button type="submit">Adicionar</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Opções de pagamento</h2>
+            <form action="#">
+                <div>
+                    <input type="radio" id="dinheiro" name="pagamento" value="dinheiro" required>
+                    <label id="dinheiro" for="dinheiro">Dinheiro</label><br>
+                </div>
+
+                <div>
+                    <input type="radio" id="cartao" name="pagamento" value="cartao" required>
+                    <label id="cartao" for="cartao">Cartão</label><br><br>
+                </div>
+
+                <div>
+                    <button type="submit">Finalizar Compra</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>Feito por João Jardim. Turma 1B Manhã</footer>
+</body>

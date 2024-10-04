@@ -2,18 +2,26 @@ body {
     background-color: grey;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: o;
+    padding: 0;
     text-align: center;
 }
 
 header {
-    padding: 10px;
-    font-size: 20px;
+    padding: 20px;
+    font-size: 24px;
+    background-color: #333;
+    color: white;
+}
+
+main {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 h2 {
-    padding: 10px;
-    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 nav {
@@ -51,13 +59,48 @@ ul li {
     color: black;
 }
 
-main {
-    padding: 20px;
-    margin: 0px 40px 40px 40px;
-    border-radius: 10px;
+.funcionarios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.funcionario-card {
     background-color: white;
-    font-size: 25px;
-    font-weight: bold
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.foto-funcionario {
+    max-width: 250px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #555;
 }
 
 footer {
@@ -65,4 +108,5 @@ footer {
     color: black;
     text-align: center;
     padding: 10px;
+    border-top: 1px solid lightgray;
 }

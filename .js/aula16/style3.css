@@ -2,13 +2,15 @@ body {
     background-color: grey;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: o;
+    padding: 0;
     text-align: center;
 }
 
 header {
     padding: 10px;
     font-size: 20px;
+    background-color: #333;
+    color: white;
 }
 
 h2 {
@@ -45,14 +47,41 @@ main {
     background-color: white;
 }
 
-form div {
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 18px;
+section {
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="number"], input[type="url"] {
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    width: 30%;
 }
 
 button {
-    padding: 5px 20px 5px 20px;
+    background-color: #333;
+    color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: grey;
 }
 
 footer {
