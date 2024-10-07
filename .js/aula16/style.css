@@ -8,9 +8,13 @@ body {
 
 header {
     padding: 20px;
-    font-size: 20px;
+    font-size: 24px;
     background-color: #333;
     color: white;
+}
+
+h2 {
+    font-size: 28px;
 }
 
 nav {
@@ -35,6 +39,18 @@ nav ul li a {
     color: black;
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
 main {
     background-color: white;
     margin: 20px;

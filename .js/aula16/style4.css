@@ -79,9 +79,11 @@ ul li {
 .foto-funcionario {
     max-width: 250px;
     max-height: 300px;
-    width: auto;
-    height: auto;
+    height: 50%;
+    width: 90%;
     border-radius: 10px;
+    align-items: center;
+    margin-left: 13px;
 }
 
 h3 {
