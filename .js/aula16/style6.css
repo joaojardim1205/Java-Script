@@ -59,7 +59,50 @@ main {
     background-color: white;
 }
 
+form {
+    margin-bottom: 30px;
+}
 
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    width: 50%;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid lightgray;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
 
 footer {
     background-color: white;
