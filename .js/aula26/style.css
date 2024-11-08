@@ -31,3 +31,10 @@ body {
     top: 150px;
     left: 250px;
 }
+
+.projetil {
+    background-color: grey;
+    position: absolute;
+    width: 20px;
+    height: 10px;
+}
