@@ -39,10 +39,11 @@ const checkResult = () => {
     for (let condicao of winningConditions) {
         const [a, b, c] = condicao;
         if (board[a] && board[a] == board[b] && board[a] == board[c]) {
-            message.textContent = `Jogador ${currentPlayer} venceu a rodada!!`;
+            message.textContent = (`Jogador ${currentPlayer} venceu a rodada!!`);
             isGameActive = false;
             updatePlacar(currentPlayer);
             clearInterval(timer);
+            highlightWinningCells(a, b, c); 
             return;
         }
     }
@@ -56,6 +57,12 @@ const checkResult = () => {
 
     currentPlayer = currentPlayer == 'X' ? 'O' : 'X';
     resetTempo();
+};
+
+const highlightWinningCells = (a, b, c) => {
+    cells[a].classList.add('vencedor');
+    cells[b].classList.add('vencedor');
+    cells[c].classList.add('vencedor');
 };
 
 const updatePlacar = (vencedor) => {
@@ -88,14 +95,16 @@ const resetTempo = () => {
         document.getElementById('tempoRestante').textContent = tempoRestante;
         if (tempoRestante <= 0) {
             alert(`Tempo esgotado! A vez foi passada para ${currentPlayer === 'X' ? 'O' : 'X'}.`);
-            resetGame();
+            currentPlayer = currentPlayer === 'X' ? 'O' : 'X'; 
+            resetTempo(); 
         }
     }, 1000);
 };
+
 
 cells.forEach(cell => {
     cell.addEventListener('click', handleCellClick);
 });
 
 resetButton.addEventListener('click', resetGame);
-resetTempo(); 
+resetTempo();
