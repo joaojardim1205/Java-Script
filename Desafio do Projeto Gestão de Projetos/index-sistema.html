@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do Projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Projetos e Tarefas</h1>
+    </header>
+
+    <section>
+      <h2>Adicionar Projeto</h2>
+      <form id="formularioProjeto">
+        <input type="text" id="nomeProjeto" placeholder="Nome do Projeto" required/>
+        <button type="submit">Adicionar Projeto</button>
+      </form>
+    </section>
+  
+    <section>
+      <h2>Adicionar Tarefa</h2>
+      <form id="formularioTarefa">
+        <select id="projetoStatus" required>
+          <option value="">Selecione um projeto</option>
+        </select>
+  
+        <input type="text" id="descricao" placeholder="Descrição da Tarefa" required/>
+        <input type="text" id="responsavel" placeholder="Responsável pela Tarefa" required/>
+        <input type="text" id="recurso" placeholder="Tipo de Recurso" required/>
+        <select id="status" required>
+          <option value="">Status</option>
+          <option value="Pendente">Pendente</option>
+          <option value="Em andamento">Em andamento</option>
+          <option value="Concluída">Concluída</option>
+        </select>
+
+        <label>Cor: <input type="color" id="cor" required /></label>
+  
+        <button type="submit">Adicionar Tarefa</button>
+      </form>
+    </section>
+  
+    <section>
+      <h2>Projetos e Tarefas</h2>
+      <div id="lista-Projetos"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

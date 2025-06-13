@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+        <p>Olá, mundo</p>
+    </div>
+
+    <h1 id="titulo">Titulo original</h1>
+
+    <div id="link"></div>
+    <script>
+        const titulo = document.getElementById('titulo');
+        titulo.style.color('blue');
+        titulo.style.fontSize('30px');
+        titulo.style.textAlign('center');
+
+        const divLink = document.getElementById("link");
+        divLink.innerHTML = '<a href="https://www.exemplo.com">Clique aqui</a>';
+
+        const link = divLink.querySelector("a");
+        link.style.color = "green";
+        link.style.textDecoration = "none";
+    </script>
+</body>
+</html>
