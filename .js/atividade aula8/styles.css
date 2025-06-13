@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ff0000;
+}
+
+h2 {
+    margin: 10px 0px 34px;
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.placar-container {
+    margin-left: 120px;
+    background-color: #444;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 200px;
+}
+
+.placar-container h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #ff0000;
+}
+
+.placar-container p {
+    
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 2px solid #ff0000;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #666;
+}
+
+.reset {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 10%;
+    margin-top: 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.reset:hover {
+    background-color: #cc0000;
+}
+
+.vencedor {
+    background-color: #00ff00; 
+    border-color: #ffffff; 
+}
+.message {
+    font-size: 2em;
+    color: #00ff00;
+    margin-top: 20px;
+    position: absolute;
+    top: 120px;
+}
